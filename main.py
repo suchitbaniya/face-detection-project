@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from PIL import Image,ImageTk
+from student import Student
 
 class Face_Recognition_System:
     def __init__(self,root):
@@ -16,18 +17,19 @@ class Face_Recognition_System:
         bg_img = Label(self.root, image=self.photoimg)
         bg_img.place(x=0, y=0, width=1530, height=790)
 
-        title_lbl =Label(bg_img,text="Face Recognition Attendance System",font=("times new roman",35, "bold"),bg= "white",fg="blue")
-        title_lbl.place(x=0,y=0,width=1530,height= 30)
+        title_lbl =Label(bg_img,text="Face Recognition Attendance System",font=("times new roman",35, "bold"),bg= "blue"
+                         ,fg="white")
+        title_lbl.place(x=0,y=0,width=1530,height= 50)
 
         #Student Button
         img1 = Image.open("./image_file/button_image.jpeg")
         img1 = img1.resize((250, 250), Image.LANCZOS)
         self.photoimg1 = ImageTk.PhotoImage(img1)
 
-        b1 = Button(bg_img,image=self.photoimg1,cursor="hand")
+        b1 = Button(bg_img,image=self.photoimg1,command=self.student_details,cursor="hand")
         b1.place(x= 200,y=100,width= 250,height=250)
 
-        b1_1 = Button(bg_img, text="Students Details", cursor="hand",font=("times new roman",20, "bold"),bg= "white",
+        b1_1 = Button(bg_img, text="Students Details",command=self.student_details, cursor="hand",font=("times new roman",20, "bold"),bg= "white",
                       fg="blue")
         b1_1.place(x=200, y=350, width=250, height=40)
 
@@ -92,7 +94,10 @@ class Face_Recognition_System:
         b6_1.place(x=1000, y=700, width=250, height=40)
 
 
-
+        #=========Functions button==========
+        def student_details(self):
+            self.new_window = Toplevel(self.root)
+            self.app =Student(self.new_window)
 
 
 
