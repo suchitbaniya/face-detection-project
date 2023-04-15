@@ -94,10 +94,11 @@ class Face_Recognition_System:
         b6_1.place(x=1000, y=700, width=250, height=40)
 
 
-        #=========Functions button==========
-        def student_details(self):
-            self.new_window = Toplevel(self.root)
-            self.app =Student(self.new_window)
+    #=========Functions button==========
+    def student_details(self):
+        self.new_window = Toplevel(self.root)
+        self.app = Student(self.new_window)
+
 
 
 
