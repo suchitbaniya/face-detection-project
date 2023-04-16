@@ -26,11 +26,10 @@ class Face_Recognition_System:
         img1 = img1.resize((250, 250), Image.LANCZOS)
         self.photoimg1 = ImageTk.PhotoImage(img1)
 
-        b1 = Button(bg_img,image=self.photoimg1,command=self.student_details,cursor="hand")
+        b1 = Button(bg_img,image=self.photoimg1,command=self.student_details,cursor="hand2")
         b1.place(x= 200,y=100,width= 250,height=250)
 
-        b1_1 = Button(bg_img, text="Students Details",command=self.student_details, cursor="hand",font=("times new roman",20, "bold"),bg= "white",
-                      fg="blue")
+        b1_1 = Button(bg_img, text="Students Details",command=self.student_details, cursor="hand2",font=("times new roman",20, "bold"),bg="blue",fg="white")
         b1_1.place(x=200, y=350, width=250, height=40)
 
         # Detect face Button
@@ -38,11 +37,10 @@ class Face_Recognition_System:
         img2 = img2.resize((250, 250), Image.LANCZOS)
         self.photoimg2 = ImageTk.PhotoImage(img2)
 
-        b2 = Button(bg_img, image=self.photoimg2, cursor="hand")
+        b2 = Button(bg_img, image=self.photoimg2, cursor="hand2")
         b2.place(x=600, y=100, width=250, height=250)
 
-        b2_1 = Button(bg_img, text="Face Detector", cursor="hand", font=("times new roman", 20, "bold"), bg="white",
-                      fg="blue")
+        b2_1 = Button(bg_img, text="Face Detector", cursor="hand2", font=("times new roman", 20, "bold"),bg="blue",fg="white")
         b2_1.place(x=600, y=350, width=250, height=40)
 
         # Attendance Button
@@ -50,11 +48,10 @@ class Face_Recognition_System:
         img3 = img3.resize((250, 250), Image.LANCZOS)
         self.photoimg3 = ImageTk.PhotoImage(img3)
 
-        b3 = Button(bg_img, image=self.photoimg3, cursor="hand")
+        b3 = Button(bg_img, image=self.photoimg3, cursor="hand2")
         b3.place(x=1000, y=100, width=250, height=250)
 
-        b3_1 = Button(bg_img, text="Attendance", cursor="hand", font=("times new roman", 20, "bold"), bg="white",
-                      fg="blue")
+        b3_1 = Button(bg_img, text="Attendance", cursor="hand2", font=("times new roman", 20, "bold"),bg="blue",fg="white")
         b3_1.place(x=1000, y=350, width=250, height=40)
 
         # Train dataset Button
@@ -62,11 +59,10 @@ class Face_Recognition_System:
         img4 = img4.resize((250, 250), Image.LANCZOS)
         self.photoimg4 = ImageTk.PhotoImage(img4)
 
-        b4 = Button(bg_img, image=self.photoimg4, cursor="hand")
+        b4 = Button(bg_img, image=self.photoimg4, cursor="hand2")
         b4.place(x=200, y=450, width=250, height=250)
 
-        b4_1 = Button(bg_img, text="Train Data", cursor="hand", font=("times new roman", 20, "bold"), bg="white",
-                      fg="blue")
+        b4_1 = Button(bg_img, text="Train Data", cursor="hand2", font=("times new roman", 20, "bold"),bg="blue",fg="white")
         b4_1.place(x=200, y=700, width=250, height=40)
 
         # Developers Button
@@ -74,11 +70,10 @@ class Face_Recognition_System:
         img5 = img5.resize((250, 250), Image.LANCZOS)
         self.photoimg5 = ImageTk.PhotoImage(img5)
 
-        b5 = Button(bg_img, image=self.photoimg5, cursor="hand")
+        b5 = Button(bg_img, image=self.photoimg5, cursor="hand2")
         b5.place(x=600, y=450, width=250, height=250)
 
-        b5_1 = Button(bg_img, text="Developers", cursor="hand", font=("times new roman", 20, "bold"), bg="white",
-                      fg="blue")
+        b5_1 = Button(bg_img, text="Developers", cursor="hand2", font=("times new roman", 20, "bold"),bg="blue",fg="white")
         b5_1.place(x=600, y=700, width=250, height=40)
 
         # Exit Button
@@ -86,11 +81,10 @@ class Face_Recognition_System:
         img6 = img6.resize((250, 250), Image.LANCZOS)
         self.photoimg6 = ImageTk.PhotoImage(img6)
 
-        b6 = Button(bg_img, image=self.photoimg6, cursor="hand")
+        b6 = Button(bg_img, image=self.photoimg6, cursor="hand2")
         b6.place(x=1000, y=450, width=250, height=250)
 
-        b6_1 = Button(bg_img, text="Exit", cursor="hand", font=("times new roman", 20, "bold"), bg="white",
-                      fg="blue")
+        b6_1 = Button(bg_img, text="Exit", cursor="hand2", font=("times new roman", 20, "bold"),bg="blue",fg="white")
         b6_1.place(x=1000, y=700, width=250, height=40)
 
 
