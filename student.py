@@ -43,7 +43,7 @@ class Student:
 
         #Left Label Frame
 
-        left_frame = LabelFrame(main_frame, bd=2,bg="white", relief=RIDGE,text="Student Details",font=("times new roman",15, "bold"))
+        left_frame = LabelFrame(main_frame, bd=2,bg="white", relief=RIDGE,text="Registration",font=("times new roman",15, "bold"))
         left_frame.place(x=10,y=10,width=720, height=600)
 
         img_left= Image.open("./image_file/Student_image2.jpeg")

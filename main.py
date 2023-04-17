@@ -32,10 +32,10 @@ class Face_Recognition_System:
         img1 = img1.resize((250, 250), Image.LANCZOS)
         self.photoimg1 = ImageTk.PhotoImage(img1)
 
-        b1 = Button(bg_img,image=self.photoimg1,command=self.student_details(),cursor="hand2")
+        b1 = Button(bg_img,image=self.photoimg1,command=self.student_details,cursor="hand2")
         b1.place(x= 200,y=100,width= 250,height=250)
 
-        b1_1 = Button(bg_img, text="Students Details",command=self.student_details(  ), cursor="hand2",font=("times new roman",20, "bold"),bg="blue",fg="white")
+        b1_1 = Button(bg_img, text="Students Details",command=self.student_details, cursor="hand2",font=("times new roman",20, "bold"),bg="blue",fg="white")
         b1_1.place(x=200, y=350, width=250, height=40)
 
         # Detect face Button
